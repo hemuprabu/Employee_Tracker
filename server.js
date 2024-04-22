@@ -186,7 +186,6 @@ async function addRole() {
     await pool.query("ROLLBACK");
     console.error("Error adding department:", error.message);
   }
-
 }
 
 // Function to add an employee
@@ -226,10 +225,29 @@ async function addEmployee() {
     },
   ]);
 
-  const query =
-    "INSERT INTO employees (first_name, last_name, role_id, manager_id) VALUES ($1, $2, $3, $4)";
-  await pool.query(query, [first_name, last_name, role_id, manager_id]);
-  console.log("Employee added successfully.");
+  try {
+    await pool.query("BEGIN");
+    await pool.query(
+      `SELECT setval('employees_employee_id_seq', max(employee_id))FROM employees`
+    );
+    await pool.query(
+      `SELECT CURRVAL(PG_GET_SERIAL_SEQUENCE('"employees"', 'employee_id')) AS "Current Value", MAX("employee_id") AS "Max Value" FROM "employees"`
+    );
+
+    await pool.query(
+      `SELECT SETVAL((SELECT PG_GET_SERIAL_SEQUENCE('"employees"', 'employee_id')), (SELECT (MAX("employee_id") + 1) FROM "employees"), FALSE);`
+    );
+
+    await pool.query(
+      "INSERT INTO employees (first_name, last_name, role_id, manager_id) VALUES ($1, $2, $3, $4)",
+      [first_name, last_name, role_id, manager_id]
+    );
+    console.log("Employee added successfully.");
+    await pool.query("COMMIT");
+  } catch (error) {
+    await pool.query("ROLLBACK");
+    console.error("Error adding department:", error.message);
+  }
 }
 
 // Function to update an employee role
