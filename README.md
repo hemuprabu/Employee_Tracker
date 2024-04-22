@@ -16,7 +16,7 @@ To run the Employee Tracker application, follow these steps to install the requi
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/hemuprabu/SVG_Logo_Maker
+   git clone https://github.com/hemuprabu/Employee_Tracker
 
 2. cd Employee Tracker
 
