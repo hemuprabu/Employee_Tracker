@@ -66,11 +66,16 @@ Create unique logos with the Employee Tracker application by giving input or by 
 
 The Employee Tracker project adheres to high code standards to ensure maintainability and readability. Here are some key aspects of the repository quality:
 
-- **Naming Conventions**: Files, variables, and functions follow consistent naming conventions for clarity and consistency.
-- **File Structure**: The project is organized into logical directories and files, making it easy to navigate and understand the codebase.
-- **Commit Messages**: Descriptive commit messages are used to provide clear explanations of the changes made in each commit, aiding in tracking project progress and history.
+* Repository has a unique name.
 
-Maintaining a high level of repository quality is essential for the scalability and collaboration of the  Employee Tracker project.
+* Repository follows best practices for file structure and naming conventions.
+
+* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+
+* Repository contains multiple descriptive commit messages.
+
+* Repository contains a high-quality README with description and a link to a walkthrough video.
+
 
 ## License:
 
