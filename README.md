@@ -54,7 +54,9 @@ Create unique logos with the Employee Tracker application by giving input or by 
 
 ## Screenshots
 
-
+![Screenshot 2024-04-22 195952](https://github.com/hemuprabu/Employee_Tracker/assets/108079829/db1f4471-1d2e-4809-86fc-99782d1c6d4a)
+![Screenshot 2024-04-22 200256](https://github.com/hemuprabu/Employee_Tracker/assets/108079829/9bd33d85-0478-470e-a89b-3c36f3b8e515)
+![Screenshot 2024-04-22 200411](https://github.com/hemuprabu/Employee_Tracker/assets/108079829/66b8b65e-edfe-41e1-9c61-8e2c675fea26)
 
 ## Walkthrough Video:
 
