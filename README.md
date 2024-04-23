@@ -60,7 +60,7 @@ Create unique logos with the Employee Tracker application by giving input or by 
 
 ## Walkthrough Video:
 
-
+Check out this video I recorded with Screencastify: https://drive.google.com/file/d/15_T7tmLxy-qL84ra78cDZm3HmGjvLFjx/view
 
 ## Repository Quality:
 
